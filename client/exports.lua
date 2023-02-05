@@ -1,3 +1,7 @@
+exports("getDefault", function()
+    return Config.Skills
+end)
+
 exports("addXP", function(skill,points)
     if not loaded then
         Sync()
