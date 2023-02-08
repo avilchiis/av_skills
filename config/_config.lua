@@ -7,6 +7,7 @@ Config.Skills = {
     ['diving'] = 0,
     ['shooting'] = 0,
     ['driving'] = 0,
+    ['strength'] = 0,
 }
 Config.Icons = {
     ['hacker'] = "fa-solid fa-user-secret",
@@ -14,4 +15,5 @@ Config.Icons = {
     ['diving'] = "fa-solid fa-lungs",
     ['shooting'] = "fa-solid fa-gun",
     ['driving'] = "fa-solid fa-person-biking",
+    ['strength'] = "fa-solid fa-person-biking",
 }

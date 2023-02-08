@@ -6,7 +6,7 @@ exports("addXP", function(skill,points)
     if not loaded then
         Sync()
     end
-    if not skill or points then
+    if not skill or not points then
         print('^2[ERROR] ^7Missing arguments addXP()')
         return false
     end
@@ -25,7 +25,7 @@ exports("removeXP", function(skill,points)
     if not loaded then
         Sync()
     end
-    if not skill or points then
+    if not skill or not points then
         print('^2[ERROR] ^7Missing arguments addXP()')
         return false
     end
@@ -44,7 +44,7 @@ exports("setXP", function(skill,points)
     if not loaded then
         Sync()
     end
-    if not skill or points then
+    if not skill or not points then
         print('^2[ERROR] ^7Missing arguments addXP()')
         return false
     end
