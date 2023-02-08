@@ -16,7 +16,6 @@ if Config.Framework == "QBCore" then
     RegisterServerEvent('av_skills:save', function(skills)
         local Player = QBCore.Functions.GetPlayer(source)
         local citizenid = Player.PlayerData.citizenid
-        print(json.encode(skills))
         MySQL.insert.await('UPDATE players SET skills = ? WHERE citizenid = ?', {json.encode(skills),citizenid})
     end)
 

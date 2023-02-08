@@ -9,7 +9,7 @@ games {
 
 shared_scripts {
 '@ox_lib/init.lua',
---'@es_extended/imports.lua', -- Uncomment this if you are using latest ESX
+'@es_extended/imports.lua', -- Uncomment this if you are using latest ESX
 'config/*.lua'
 }
 

@@ -1,5 +1,5 @@
 Config = {}
-Config.Framework = "QBCore" -- "QBCore" or "ESX", for ESX uncomment the ESX import from fxmanifest.
+Config.Framework = "ESX" -- "QBCore" or "ESX", for ESX uncomment the ESX import from fxmanifest.
 Config.Command = "skills"
 Config.Skills = {
     ['hacker'] = 0,

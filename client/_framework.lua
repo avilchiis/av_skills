@@ -21,6 +21,7 @@ end)
 
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function(xPlayer)
+    Wait(1000)
     Sync()
 	loaded = true
 end)

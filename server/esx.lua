@@ -4,7 +4,11 @@ if Config.Framework == "ESX" then
         local Player = ESX.GetPlayerFromId(source)
         local identifier = Player.getIdentifier()
         local data = MySQL.single.await('SELECT skills FROM users WHERE identifier = ?', {identifier})
-        return data
+        if not data.skills then
+            data.skills = json.encode(Config.Skills)
+            MySQL.insert.await('UPDATE users SET skills = ? WHERE identifier = ?', {data.skills,identifier})
+        end
+        return json.decode(data.skills)
     end)
 
     RegisterServerEvent('av_skills:save', function(skills)
